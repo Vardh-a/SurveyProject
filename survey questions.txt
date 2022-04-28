@@ -1,0 +1,112 @@
+Employee  |  Candidate 
+
+Employee
+
+1)Employee Id
+2)First Name
+3)Last Name
+4)EMail Id
+5)Designation
+
+Questions
+
+1)How long have you been working for the company?
+	textbox
+2)Overall, how satisfied are you with the company you work for?
+	Extremely Satisfied
+	Very Satisfied
+	Neither Satisfied nor Dissatisfied
+	Very Dissatisfied
+	Extremely Dissatisfied
+3)Please rate your satisfaction with employee benefits and policies of your organization.
+	Extremely Satisfied
+	Very Satisfied
+	Neither Satisfied nor Dissatisfied
+	Very Dissatisfied
+	Extremely Dissatisfied
+4)If you have ever offered suggestions to management, how satisfied were you with the response?
+	Extremely Satisfied
+	Very Satisfied
+	Neither Satisfied nor Dissatisfied
+	Very Dissatisfied
+	Extremely Dissatisfied
+5)Do you think your good work gets rewarded?
+	Yes
+	No
+6)Do you have any suggestions to improve company/employee relations?
+	textbox
+7)Do you have any other comments?
+	textbox
+8)What did you like the most about working here?
+	textbox
+9)How likely are you to recommend our company to others?
+	Very likely
+	Likely
+	Somewhat likely
+	Not likely
+	Not at all likely
+10)Rate your overall working experience in our company
+	[Star rating]
+----------------------------------------------------------------------------------------------------------------
+Candidate
+ 
+1)First Name
+2)Last Name
+3)Email Id
+4)Work Experience
+	0-2 
+	2-5
+	5-10
+	above 10
+
+Questions
+1)How did you hear about us?
+	textbox
+2)What position did you interview for?
+	textbox
+3)The interview process was:
+	Challenging and interesting
+	Fast and fluid
+	Rather boring
+	Too long
+	Other
+4)Please rate the following statement: “My phone and email communication with the recruiter was prompt.”
+	Always
+	Most of the time
+	Sometimes
+	Rarely
+	Never
+5)How would you rate your understanding of the role after the hiring process?
+	I got a very clear understanding of the role.
+	I understood most parts of the role.
+	I understood the basics of the role.
+	I didn’t understand most parts of the role.
+	I didn’t understand the role at all.
+6)How consistent was the job description with what was presented to you about the role during the hiring process?
+	Very consistent
+	Mostly consistent
+	Somewhat consistent
+	Barely consistent
+	Not consistent at all
+7)Please rate the following statement: “My interviewers were well-prepared.”
+	Strongly agree 
+	Agree 
+	Disagree 
+	Strongly disagree 
+8)How likely are you to recommend our company as an employer?
+	Very likely
+	Likely
+	Somewhat likely
+	Not likely
+	Not at all likely
+9)What do you think would make our hiring process better?
+	textbox
+10)Is there anything else you’d like to add about your experience with our hiring process?
+	textbox
+
+
+
+
+
+
+
