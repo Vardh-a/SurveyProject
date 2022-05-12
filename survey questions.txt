@@ -76,24 +76,21 @@ Questions
 	Sometimes
 	Rarely
 	Never
-5)How would you rate your understanding of the role after the hiring process?
-	I got a very clear understanding of the role.
-	I understood most parts of the role.
-	I understood the basics of the role.
-	I didn’t understand most parts of the role.
-	I didn’t understand the role at all.
+5)Did you understand the role you're hiring for?
+	Yes.
+	No.
 6)How consistent was the job description with what was presented to you about the role during the hiring process?
 	Very consistent
 	Mostly consistent
 	Somewhat consistent
 	Barely consistent
 	Not consistent at all
-7)Please rate the following statement: “My interviewers were well-prepared.”
+7)Please rate the following statement: “I was well prepared for the interview” 
 	Strongly agree 
 	Agree 
 	Disagree 
 	Strongly disagree 
-8)How likely are you to recommend our company as an employer?
+8)How likely are you to recommend our company as an employee?
 	Very likely
 	Likely
 	Somewhat likely

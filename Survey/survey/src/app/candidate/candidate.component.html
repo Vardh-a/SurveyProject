@@ -1,0 +1,318 @@
+<div
+  class="row bg-image"
+  style="
+    background-image: url('../assets/images/background1.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+  "
+>
+ <div class="row">
+   <div class="container col-md-5">
+   </div>
+   <div class="container col-md-4">
+    <h1>SURVEY FORM</h1>
+  </div>
+ </div>
+  <div class="row">
+    <div class="container col-md-4">
+      <div class="box">
+        <div class="icon"><h4>FN</h4></div>
+        <div class="content">
+          <p>
+            <label>First Name</label>
+            <input
+              type="text"
+              id="text"
+              [(ngModel)]="candidate.fname"
+              placeholder="Enter your first name"
+            />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container col-md-4">
+      <div class="box">
+        <div class="icon"><h4>LN</h4></div>
+        <div class="content">
+          <p>
+            <label>Last Name</label>
+            <input
+              type="text"
+              id="text"
+              [(ngModel)]="candidate.lname"
+              placeholder="Enter your last name"
+            />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container col-md-4">
+      <div class="box">
+        <div class="icon"><h4>M</h4></div>
+        <div class="content">
+          <p>
+            <label>Mail ID</label>
+            <input
+              type="text"
+              id="text"
+              [(ngModel)]="candidate.mail"
+              placeholder="Enter your mail id"
+            />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container col-md-4">
+      <div class="box">
+        <div class="icon"><h4>WE</h4></div>
+        <div class="content">
+          <p>
+            <label>Work Experience</label>
+            <input
+              type="text"
+              id="text"
+              [(ngModel)]="candidate.experience"
+              placeholder="Enter your work experience"
+            />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container col-md-4">
+      <div class="box">
+        <div class="icon"><h4>Q1</h4></div>
+        <div class="content">
+          <p>
+            <label>How did you hear about us?</label>
+            <input
+              type="text"
+              id="text"
+              [(ngModel)]="candidate.cq1"
+              placeholder="Type here"
+            />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container col-md-4">
+      <div class="box">
+        <div class="icon"><h4>Q2</h4></div>
+        <div class="content">
+          <p>
+            <label>What position did you interview for?</label>
+            <input
+              type="text"
+              id="text"
+              [(ngModel)]="candidate.cq2"
+              placeholder="Type here"
+            />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container col-md-4">
+      <div class="box">
+        <div class="icon"><h4>Q3</h4></div>
+        <div class="content">
+          <p>
+          <label>How was the interview process?</label>
+          <select matNativeControl #ip (click)="chooseIp(ip)">
+            <option label="--select something --"></option>
+            <option value="Challenging and interesting">
+              Challenging and interesting
+            </option>
+            <option value="Fast and fluid">Fast and fluid</option>
+            <option value="Rather boring">Rather boring</option>
+            <option value="Too long">Too long</option>
+          </select>
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="container col-md-4">
+      <div class="box">
+        <div class="icon"><h4>Q4</h4></div>
+        <div class="content">
+          <p>
+            <label
+              >Please rate the following statement: “My phone and email
+              communication with the recruiter was prompt.”</label
+            >
+            <select #q4 (click)="candidate.cq4 = q4.value">
+              <option label="--select something --"></option>
+              <option id="text" value="Always">Always</option>
+              <option id="text" value="Most of the time">
+                Most of the time
+              </option>
+              <option id="text" value="Sometimes">Sometimes</option>
+              <option id="text" value="Rarely">Rarely</option>
+              <option id="text" value="Never">Never</option>
+            </select>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container col-md-4">
+      <div class="box">
+        <div class="icon"><h4>Q5</h4></div>
+        <div class="content">
+          <p>
+            <label>Did you understand the role you're hiring for?</label>
+          </p>
+          <input
+            type="radio"
+            id="q5"
+            value="Yes"
+            name="recruiter"
+            [(ngModel)]="candidate.cq5"
+          />
+          <label id="radio" for="q5">Yes</label>
+          &nbsp;&nbsp;&nbsp;
+          <input
+            type="radio"
+            id="q5"
+            value="No"
+            name="recruiter"
+            [(ngModel)]="candidate.cq5"
+          />
+          <label id="radio" for="q5">No</label>
+        </div>
+      </div>
+    </div>
+    <div class="container col-md-4">
+      <div class="box">
+        <div class="icon"><h4>Q6</h4></div>
+        <div class="content">
+          <p>
+            <label
+              >How consistent was the job description?</label
+            >
+            <select #q6 (click)="candidate.cq6 = q6.value">
+              <option label="--select something --"></option>
+              <option id="text" value="Very consistent">Very consistent</option>
+              <option id="text" value="Mostly consistent">
+                Mostly consistent
+              </option>
+              <option id="text" value="Somewhat consistent">
+                Somewhat consistent
+              </option>
+              <option id="text" value="Barely consistent">
+                Barely consistent
+              </option>
+              <option id="text" value="Not consistent at all">
+                Not consistent at all
+              </option>
+            </select>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="container col-md-4">
+      <div class="box">
+        <div class="icon"><h4>Q7</h4></div>
+        <div class="content">
+          <p>
+            <label
+              >“I was well prepared for the
+              interview”
+            </label>
+          </p>
+          &nbsp;
+          <input
+            type="radio"
+            id="q7"
+            value="Agree"
+            name="prepared"
+            [(ngModel)]="candidate.cq7"
+          />
+          <label id="radio" for="q9">Agree</label>
+          &nbsp;
+          <input
+            type="radio"
+            id="q7"
+            value="Disagree"
+            name="prepared"
+            [(ngModel)]="candidate.cq7"
+          />
+          <label id="radio" for="q9">Disagree</label>
+        </div>
+      </div>
+    </div>
+    <div class="container col-md-4">
+      <div class="box">
+        <div class="icon"><h4>Q8</h4></div>
+        <div class="content">
+          <p>
+            <label>How likely you would recommend our company to others?</label>
+            <select #q8 (click)="candidate.cq8 = q8.value">
+              <option label="--select something --"></option>
+              <option id="text" value="Very likely">Very consistent</option>
+              <option id="text" value="Likely">Likely</option>
+              <option id="text" value="Somewhat likely">Somewhat likely</option>
+              <option id="text" value="Not likely">Not likely</option>
+            </select>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container col-md-4">
+      <div class="box">
+        <div class="icon"><h4>Q9</h4></div>
+        <div class="content">
+          <p>
+            <label
+              >What do you think would make our hiring process better?</label
+            >
+            <input
+              type="text"
+              id="text"
+              [(ngModel)]="candidate.cq9"
+              placeholder="Type here"
+            />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+      id="message"
+      *ngIf="alert"
+      class="alert alert-success alert-dismissible fade show"
+      role="alert"
+    >
+      <strong>Success!!</strong> Your Response is added successfully.
+      <button
+        (click)="closeAlert()"
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    
+  <div class="row">
+    <div class="container col-md-5"></div>
+    <div class="container col-md-4">
+    
+    <div>
+      <button (click)="csubmit()" class="btn btn-primary">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button (click)="creset()" class="btn btn-danger">Cancel</button>
+    </div>
+  </div>
+  </div>
+
+</div>

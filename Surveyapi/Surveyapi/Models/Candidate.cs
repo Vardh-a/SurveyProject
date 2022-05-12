@@ -2,9 +2,9 @@
 {
     public class Candidate
     {
-        public string Fname { get; set; }
-        public string Lname { get; set; }
-        public string Mail { get; set; }
+        public string fname { get; set; }
+        public string lname { get; set; }
+        public string mail { get; set; }
         public string experience { get; set; }
         public string cq1 { get; set; }
         public string cq2 { get; set; }
@@ -15,6 +15,5 @@
         public string cq7 { get; set; }
         public string cq8 { get; set; }
         public string cq9 { get; set; }
-        public string cq10 { get; set; }
     }
 }

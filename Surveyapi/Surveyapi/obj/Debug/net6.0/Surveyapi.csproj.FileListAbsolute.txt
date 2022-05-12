@@ -25,3 +25,30 @@ D:\Doc\Angular\API\Surveyapi\Surveyapi\obj\Debug\net6.0\Surveyapi.dll
 D:\Doc\Angular\API\Surveyapi\Surveyapi\obj\Debug\net6.0\ref\Surveyapi.dll
 D:\Doc\Angular\API\Surveyapi\Surveyapi\obj\Debug\net6.0\Surveyapi.pdb
 D:\Doc\Angular\API\Surveyapi\Surveyapi\obj\Debug\net6.0\Surveyapi.genruntimeconfig.cache
+D:\Desktop\survey project\Surveyapi\Surveyapi\bin\Debug\net6.0\appsettings.Development.json
+D:\Desktop\survey project\Surveyapi\Surveyapi\bin\Debug\net6.0\appsettings.json
+D:\Desktop\survey project\Surveyapi\Surveyapi\bin\Debug\net6.0\Surveyapi.exe
+D:\Desktop\survey project\Surveyapi\Surveyapi\bin\Debug\net6.0\Surveyapi.deps.json
+D:\Desktop\survey project\Surveyapi\Surveyapi\bin\Debug\net6.0\Surveyapi.runtimeconfig.json
+D:\Desktop\survey project\Surveyapi\Surveyapi\bin\Debug\net6.0\Surveyapi.dll
+D:\Desktop\survey project\Surveyapi\Surveyapi\bin\Debug\net6.0\Surveyapi.pdb
+D:\Desktop\survey project\Surveyapi\Surveyapi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Desktop\survey project\Surveyapi\Surveyapi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Desktop\survey project\Surveyapi\Surveyapi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Desktop\survey project\Surveyapi\Surveyapi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Desktop\survey project\Surveyapi\Surveyapi\obj\Debug\net6.0\Surveyapi.csproj.AssemblyReference.cache
+D:\Desktop\survey project\Surveyapi\Surveyapi\obj\Debug\net6.0\Surveyapi.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\survey project\Surveyapi\Surveyapi\obj\Debug\net6.0\Surveyapi.AssemblyInfoInputs.cache
+D:\Desktop\survey project\Surveyapi\Surveyapi\obj\Debug\net6.0\Surveyapi.AssemblyInfo.cs
+D:\Desktop\survey project\Surveyapi\Surveyapi\obj\Debug\net6.0\Surveyapi.csproj.CoreCompileInputs.cache
+D:\Desktop\survey project\Surveyapi\Surveyapi\obj\Debug\net6.0\Surveyapi.MvcApplicationPartsAssemblyInfo.cs
+D:\Desktop\survey project\Surveyapi\Surveyapi\obj\Debug\net6.0\Surveyapi.MvcApplicationPartsAssemblyInfo.cache
+D:\Desktop\survey project\Surveyapi\Surveyapi\obj\Debug\net6.0\staticwebassets.build.json
+D:\Desktop\survey project\Surveyapi\Surveyapi\obj\Debug\net6.0\staticwebassets.development.json
+D:\Desktop\survey project\Surveyapi\Surveyapi\obj\Debug\net6.0\scopedcss\bundle\Surveyapi.styles.css
+D:\Desktop\survey project\Surveyapi\Surveyapi\obj\Debug\net6.0\Surveyapi.csproj.CopyComplete
+D:\Desktop\survey project\Surveyapi\Surveyapi\obj\Debug\net6.0\Surveyapi.dll
+D:\Desktop\survey project\Surveyapi\Surveyapi\obj\Debug\net6.0\ref\Surveyapi.dll
+D:\Desktop\survey project\Surveyapi\Surveyapi\obj\Debug\net6.0\Surveyapi.pdb
+D:\Desktop\survey project\Surveyapi\Surveyapi\obj\Debug\net6.0\Surveyapi.genruntimeconfig.cache
+D:\Desktop\survey project\Surveyapi\Surveyapi\obj\Debug\net6.0\refint\Surveyapi.dll

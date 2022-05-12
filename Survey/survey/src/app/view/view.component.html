@@ -1,0 +1,64 @@
+<div style="float: right;">
+  <button  class="btn btn-primary"  (click)="getCandidatedata()">View Candidate Data</button>
+    <div *ngFor="let can of candidateData">
+        First Name: {{can.fname}}
+        <br/>
+        Last Name: {{can.lname}}
+        <br/>
+        Mail: {{can.mail}}
+        <br/>
+        Experience: {{can.experience}}
+        <br/>
+        How did you hear about us - {{can.cq1}}
+        <br/>
+        What position did you interview for - {{can.cq2}}
+        <br/>
+        How was the interview process - {{can.cq3}}
+        <br/>
+        My phone and email communication with the recruiter was prompt -{{can.cq4}}
+        <br/>
+        Did you understand the role you're hiring for - {{can.cq5}}
+        <br/>
+        How consistent was the job description - {{can.cq6}}
+        <br/>
+        “I was well prepared for the interview” - {{can.cq7}}
+        <br/>
+        How likely you would recommend our company to others - {{can.cq8}}
+        <br/>
+        What do you think would make our hiring process better - {{can.cq9}}
+        <br/>
+    </div>
+</div>
+
+<div>
+    <button  class="btn btn-primary"  (click)="getEmployeedata()">View Employee Data</button>
+    <div *ngFor="let emp of employeeData">
+        Employee Id: {{emp.empid}}
+        <br/>
+        First Name: {{emp.fname}}
+        <br/>
+        Last Name: {{emp.lname}}
+        <br/>
+        Mail: {{emp.mail}}
+        <br/>
+        Experience: {{emp.desg}}
+        <br/>
+        How long have you been working for the company - {{emp.q1}}
+        <br/>
+        Overall, how satisfied are you with the company you work for - {{emp.q2}}
+        <br/>
+        Please rate your satisfaction with employee benefits and policies of your organization - {{emp.q3}}
+        <br/>
+        If you have ever offered suggestions to management, how satisfied were you with the response - {{emp.q4}}
+        <br/>
+        Do you think your good work gets rewarded - {{emp.q5}}
+        <br/>
+        Do you have any suggestions to improve company/employee relations - {{emp.q6}}
+        <br/>
+        Do you have any other comments - {{emp.q7}}
+        <br/>
+        How likely are you to recommend our company to others - {{emp.q8}}
+        <br/>
+        Rate your overall working experience in our company - {{emp.q9}}
+    </div>
+</div>
