@@ -12,5 +12,6 @@ export class Employee{
     public  q6:string="";
     public  q7:string="";
     public  q8:string="";
-    public  q9:number=0;
+    public  q9:string="";
+    public  q10:number=0;
 }

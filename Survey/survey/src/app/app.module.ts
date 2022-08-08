@@ -1,6 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { EmployeeService } from 'src/services/employee.service';
 import {MatSelectModule} from '@angular/material/select';
@@ -14,7 +14,8 @@ import { CandidateService } from 'src/services/candidate.service';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ViewComponent } from './view/view.component';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ViewempComponent } from './viewemp/viewemp.component';
 
 @NgModule({
   declarations: [
@@ -22,16 +23,19 @@ import { ViewComponent } from './view/view.component';
     EmployeeComponent,
     CandidateComponent,
     HomeComponent,
-    ViewComponent
+    ViewComponent,
+    ViewempComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MatSelectModule,
-    MatTableModule
+    MatTableModule,
+    NgbModule
   ],
   providers: [EmployeeService,CandidateService],
   bootstrap: [AppComponent]

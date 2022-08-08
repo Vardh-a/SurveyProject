@@ -15,7 +15,8 @@
         public string q6 { get; set; }
         public string q7 { get; set; }
         public string q8 { get; set; }
-        public int q9 { get; set; }
+        public string q9 { get; set; }
+        public int q10 { get; set; }
 
     }
 }

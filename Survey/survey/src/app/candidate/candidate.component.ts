@@ -1,8 +1,8 @@
-import { STRING_TYPE } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import { repeat } from 'rxjs';
 import { Candidate } from 'src/models/candidate';
 import { CandidateService } from 'src/services/candidate.service';
+import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-candidate',
@@ -12,18 +12,26 @@ import { CandidateService } from 'src/services/candidate.service';
 export class CandidateComponent implements OnInit {
   alert:boolean=false;
   candidate:Candidate;
-  constructor(private candidateService:CandidateService) { 
+  constructor(private candidateService:CandidateService,
+              private router:Router) { 
     this.candidate =  new Candidate();
   }
   csubmit(){
     this.candidateService.addCandidate(this.candidate).subscribe(e=>{
       console.log(e);
-    });    
-    this.candidate =new Candidate();
-    this.alert=true;
+    }); 
+    Swal.fire({
+      title:'Success!!',
+      text:'Your response has been recorded successfully',
+      icon:'success',
+      showConfirmButton:true,
+      confirmButtonText:'Okay'
+    }).then((result)=>{
+      window.location.reload();
+    })
   }
   creset(){
-    this.candidate = new Candidate();
+    window.location.reload();
   }
   closeAlert()
   {
@@ -31,6 +39,9 @@ export class CandidateComponent implements OnInit {
   }
   chooseIp(value:any){
     this.candidate.cq3=value.value
+  }
+  back(){
+    this.router.navigate(['/'])
   }
 
   ngOnInit(): void {

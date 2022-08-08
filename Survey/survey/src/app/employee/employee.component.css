@@ -1,78 +1,78 @@
-*{
-    margin: 0;
-    padding: 0;
+.card{
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;    
+    background: rgba(0,0,0,0.4);
+  }
+  h1 {
+    font-family: Tahoma;
+    font-size: 38px;
+    color: white;
+    text-align: center;
+  }
+  h2 {
+    font-family: Tahoma;
+    font-size: 38px;
+    color:white;   
+    margin-left: 50px; 
+  }
+  h3 {
+      margin-left: 55px;
+  }
+#personal{
+    width: 600px;
+    height: 140px;
+    border: 2px #5C4033 solid;
+    background-color:#D0B49F;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 50px;
+    transition: all 0.5s ease; 
+    font-size: large;
+    font-weight: 500;
 }
-h1{
-    margin: auto;
-    width:400px;
-    color:black;
+#personal:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 2px 10px #BF6336;
 }
-h2{
-    text-align: "center";
-    padding: 20px;
-    font-family: sans-serif;
-}
-div.main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-div.register{
-    background-color: rgba(31, 144, 209, 0.5);
-    width:100%;
-    font-size:18px;
-    border-radius: 10px;
-    border: 1px solid rgba(2, 48, 250, 0.3);
-    box-shadow: 2px 2px 15px rgba(71, 8, 247, 0.3);
-    color: #fff;
-}
-label{
-    font-family: sans-serif;
-    font-size: 18px;
-    font-style: italic;
-}
-#empid{
-    width:300px;
+#text{
+    width:480px;
     border: 1px solid #ddd;
     border-radius:3px;
     outline: 0;
-    padding: 7px;
+    padding: 15px;
     background-color: #fff;
     box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3); 
 }
-#name{
-    width:300px;
+textarea{
+    width:480px;
+    height: 80px;
     border: 1px solid #ddd;
     border-radius:3px;
     outline: 0;
-    padding: 7px;
+    padding: 15px;
     background-color: #fff;
     box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3); 
 }
-#btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.dropdown{
+    width:480px;
+    border: 1px solid #ddd;
+    border-radius:3px;
+    outline: 0;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3); 
 }
-.button1{
-    background-color: rgb(136, 238, 116);
-    color: black;
-    border: 2px solid #4CAF50;
-    border-radius: 6px;
-    font-size: 24px;
+.btn{    
+    width: 100px;
+    height: 45px;
 }
-.button1:hover{
-    background-color: #4caf4c;
-    color: white;
+
+input.ng-invalid{
+    border-left: 5px solid red ;
 }
-.button2{
-    background-color: rgb(238, 120, 116);
-    color: black;
-    border: 2px solid #dd5836;
-    border-radius: 6px;
-    font-size: 24px;
-}
-.button2:hover{
-    background-color: #af534c;
-    color: white;
+
+input.ng-valid{
+    border-left: 5px solid green;
 }

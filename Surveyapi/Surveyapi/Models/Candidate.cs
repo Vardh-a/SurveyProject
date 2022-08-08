@@ -15,5 +15,6 @@
         public string cq7 { get; set; }
         public string cq8 { get; set; }
         public string cq9 { get; set; }
+        public int cq10 { get; set; }
     }
 }

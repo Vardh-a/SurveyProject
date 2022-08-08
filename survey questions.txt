@@ -10,43 +10,47 @@ Employee
 
 Questions
 
-1)How long have you been working for the company?
-	textbox
-2)Overall, how satisfied are you with the company you work for?
-	Extremely Satisfied
-	Very Satisfied
-	Neither Satisfied nor Dissatisfied
-	Very Dissatisfied
-	Extremely Dissatisfied
-3)Please rate your satisfaction with employee benefits and policies of your organization.
-	Extremely Satisfied
-	Very Satisfied
-	Neither Satisfied nor Dissatisfied
-	Very Dissatisfied
-	Extremely Dissatisfied
-4)If you have ever offered suggestions to management, how satisfied were you with the response?
-	Extremely Satisfied
-	Very Satisfied
-	Neither Satisfied nor Dissatisfied
-	Very Dissatisfied
-	Extremely Dissatisfied
+1)How long have you been working for the organization?
+	[years]-dropdown
+2)Are you satisfied with the job profile?
+	extremely satisfied
+	satisfied
+	neutral
+	dissatisfied
+	extremely dissatisfied
+3)Does your organization appreciate your ideas and suggestions?
+	strongly disagree
+	disagree
+	neutral
+	agree
+	strongly agree
+4)Please rate your satisfaction with employee benefits and policies of your organization.
+	extremely satisfied
+	satisfied
+	neutral
+	dissatisfied
+	extremely dissatisfied
 5)Do you think your good work gets rewarded?
 	Yes
 	No
-6)Do you have any suggestions to improve company/employee relations?
+6)How likely are you to recommend our company to others?
+	very likely
+	likely
+	somewhat likely
+	not likely
+	not at all likely
+7)What did you like the most about working here?
+
 	textbox
-7)Do you have any other comments?
+
+8)Do you have any suggestions to improve company/employee relations?
+
 	textbox
-8)What did you like the most about working here?
+9)Do you have any other comments?
 	textbox
-9)How likely are you to recommend our company to others?
-	Very likely
-	Likely
-	Somewhat likely
-	Not likely
-	Not at all likely
-10)Rate your overall working experience in our company
-	[Star rating]
+
+10)Rate your overall working experience with our organization
+	[rating]
 ----------------------------------------------------------------------------------------------------------------
 Candidate
  
@@ -54,52 +58,40 @@ Candidate
 2)Last Name
 3)Email Id
 4)Work Experience
-	0-2 
-	2-5
-	5-10
-	above 10
+	
 
 Questions
 1)How did you hear about us?
 	textbox
 2)What position did you interview for?
 	textbox
-3)The interview process was:
-	Challenging and interesting
-	Fast and fluid
-	Rather boring
-	Too long
-	Other
-4)Please rate the following statement: “My phone and email communication with the recruiter was prompt.”
-	Always
-	Most of the time
-	Sometimes
-	Rarely
-	Never
-5)Did you understand the role you're hiring for?
-	Yes.
-	No.
-6)How consistent was the job description with what was presented to you about the role during the hiring process?
-	Very consistent
-	Mostly consistent
-	Somewhat consistent
-	Barely consistent
-	Not consistent at all
-7)Please rate the following statement: “I was well prepared for the interview” 
-	Strongly agree 
-	Agree 
-	Disagree 
-	Strongly disagree 
-8)How likely are you to recommend our company as an employee?
-	Very likely
-	Likely
-	Somewhat likely
-	Not likely
-	Not at all likely
-9)What do you think would make our hiring process better?
+3)How was the interview process ?
+	Hard
+	Medium
+	Easy
+4)Did you understand the role you're hiring for?
+	Yes
+	No
+5)How consistent was the job description with what was presented to you about the role during the hiring process?
+	very consistent
+	mostly consistent
+	somewhat consistent
+	barely consistent
+	not consistent at all
+6)How likely are you to recommend the company to others?
+	very likely
+	likely
+	somewhat likely
+	not likely
+	not at all likely
+7)What was your impression about the company and the interview process?
+	textarea
+8)What do you think would make our hiring process better?
+	textarea
+9)Is there anything else you’d like to add about your experience with our hiring process?
 	textbox
-10)Is there anything else you’d like to add about your experience with our hiring process?
-	textbox
+10)Rate your overall interview experience with our organization
+	[rating]
 
 
 

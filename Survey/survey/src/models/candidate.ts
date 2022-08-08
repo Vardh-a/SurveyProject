@@ -12,4 +12,5 @@ export class Candidate{
     public  cq7:string="";
     public  cq8:string="";
     public  cq9:string="";
+    public  cq10:number=0;
 }

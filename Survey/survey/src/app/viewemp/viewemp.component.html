@@ -1,0 +1,44 @@
+<button id="back" (click)="back()" class="btn btn-info" style="float: left;">Home</button> 
+<h1>Employee DATA</h1>
+<table>
+    <thead>
+        <th>Employee ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Mail Id</th>
+        <th>Desgination</th>
+        <th>How long have you been working for the organization</th>
+        <th>Are you satisfied with the job profile</th>
+        <th>Does your organization appreciate your ideas and suggestions</th>
+        <th>Please rate your satisfaction with employee benefits and policies of your organization</th>
+        <th>Do you think your good work gets rewarded</th>
+        <th>How likely are you to recommend our company to others</th>
+        <th>What did you like the most about working here?</th>
+        <th>Do you have any suggestions to improve company/employee relations?</th>
+        <th>Do you have any other comments?</th>
+        <th>Rate your overall working experience with our organization</th>
+    </thead> 
+    <tbody>
+        <tr *ngFor="let emp of employeeData">
+            <td>{{emp.empid}}</td>
+            <td>{{emp.fname}}</td>
+            <td>{{emp.lname}}</td>
+            <td>{{emp.mail}}</td>
+            <td>{{emp.desg}}</td>
+            <td>{{emp.q1}}</td>
+            <td>{{emp.q2}}</td>
+            <td>{{emp.q3}}</td>
+            <td>{{emp.q4}}</td>
+            <td>{{emp.q5}}</td>
+            <td>{{emp.q6}}</td>
+            <td>{{emp.q7}}</td>
+            <td>{{emp.q8}}</td>
+            <td>{{emp.q9}}</td>   
+            <td>{{emp.q10}}</td>         
+        </tr>       
+    </tbody>
+</table>  
+<br>
+<div id="button">     
+<button  class="btn btn-primary"  (click)="getEmployeedata()">View Employee Data</button>
+</div>

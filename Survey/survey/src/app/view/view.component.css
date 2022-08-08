@@ -1,0 +1,44 @@
+h1{
+color: rgb(4, 5, 90);
+font-family: Tahoma;
+font-size: 40px;
+font-weight: bold;
+text-align: center;
+padding: 30px;
+}
+table{
+    width: 2500px;
+    box-shadow: -1px 12px 12px -6px rgba(0,0,0,0.5);
+}
+table, td, th{
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    text-align: center;
+}
+td{
+    font-size: 18px;
+
+}
+th{
+    background-color: #035c03;
+    color: white;
+    font-weight: 500;
+}
+
+tr:nth-child(odd)
+{
+    background-color: lightblue;
+}
+tr:nth-child(even)
+{
+    background-color: #ededed;
+}
+#button{
+    margin-left:900px;    
+}
+#back{
+    width: 100px;
+    height: 45px;
+    border-radius: 7px;
+}

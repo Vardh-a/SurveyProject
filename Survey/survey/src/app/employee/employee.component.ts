@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Employee } from 'src/models/employee';
 import { EmployeeService } from 'src/services/employee.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-employee',
@@ -8,26 +10,34 @@ import { EmployeeService } from 'src/services/employee.service';
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent implements OnInit {
-  alert:boolean=false;
-employee:Employee;
-  constructor(private employeeService:EmployeeService) { 
+  employee:Employee;
+  constructor(private employeeService:EmployeeService,
+              private router:Router) { 
     this.employee =  new Employee();
-  }
+  }  
   submit(){
     this.employeeService.addEmployee(this.employee).subscribe(e=>{
-      console.log(e);
+      console.log();
     });    
-    this.employee =new Employee();
-    this.alert=true;
-  }
+    Swal.fire({
+      title:'Success!!',
+      text:'Your response has been recorded successfully',
+      icon:'success',
+      showConfirmButton:true,
+      confirmButtonText:'Okay'
+    }).then((result)=>{
+      window.location.reload();
+    })
+  }  
   reset(){
-    this.employee = new Employee();
+    window.location.reload();
   }
-  closeAlert()
-  {
-    this.alert=false;
+  back(){
+    this.router.navigate(['/'])
   }
-
+  chooseIp(value:any){
+    this.employee.q1=value.value
+  }
   ngOnInit(): void {
   }
 

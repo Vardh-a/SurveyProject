@@ -1,24 +1,23 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-black">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">  
   <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" [routerLink]="'home'" >Survey Portal</a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">        
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="'employee'">Employee</a>
+        <a class="nav-link" style="color: floralwhite;" [routerLink]="'employee'">Employee</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="'candidate'">Candidate</a>
-      </li>      
+        <a class="nav-link" style="color: floralwhite;" [routerLink]="'candidate'">Candidate</a>
+      </li>     
     </ul>
-    <span  class="nav-item active" >
-      <a class="nav-link" style="color: floralwhite;" [routerLink]="'view'">View</a>
+    <span  ngbDropdown class="nav-item dropdown  mr-auto" >
+      <a ngbDropdownToggle class="nav-link dropdown-toggle" id="navbarDropdown"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: floralwhite;">Data</a>
+      <div ngbDropdownMenu  class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a ngbDropdownItem class="dropdown-item" [routerLink]="'viewemp'">Employee Data</a>
+        <a ngbDropdownItem class="dropdown-item" [routerLink]="'view'">Candidate Data</a>
+      </div>
     </span >
   </div>
 </nav>
-  <div>
-    <img src="../assets/images/H1.gif"> 
-  </div>
+    <img src="../assets/images/H1.gif" style="width: 100%;"> 
+    <div class="centered">Survey Portal</div>

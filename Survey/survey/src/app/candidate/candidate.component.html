@@ -1,22 +1,18 @@
-<div
-  class="row bg-image"
-  style="
-    background-image: url('../assets/images/background1.jpg');
-    background-size: auto;
-    background-repeat: no-repeat;
-  "
->
- <div class="row">
-   <div class="container col-md-5">
-   </div>
-   <div class="container col-md-4">
-    <h1>SURVEY FORM</h1>
-  </div>
- </div>
+<div class="row bg-image"
+style="
+  background-image: url('../assets/images/sb3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;">
+<button (click)="back()" class="btn btn-info" style="float: right;">Home</button>
+ <h1>CANDIDATE SURVEY</h1>
+<div class="card" style="width: 90rem">
+  <h2 style="text-align: center">Personal Details</h2>
   <div class="row">
-    <div class="container col-md-4">
+    <div class="container col-md-6">
       <div class="box">
+        &nbsp;&nbsp;&nbsp;
         <div class="icon"><h4>FN</h4></div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div class="content">
           <p>
             <label>First Name</label>
@@ -30,10 +26,11 @@
         </div>
       </div>
     </div>
-
-    <div class="container col-md-4">
+    <div class="container col-md-6">
       <div class="box">
+        &nbsp;&nbsp;&nbsp;
         <div class="icon"><h4>LN</h4></div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div class="content">
           <p>
             <label>Last Name</label>
@@ -49,9 +46,11 @@
     </div>
   </div>
   <div class="row">
-    <div class="container col-md-4">
+    <div class="container col-md-6">
       <div class="box">
+        &nbsp;&nbsp;&nbsp;
         <div class="icon"><h4>M</h4></div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div class="content">
           <p>
             <label>Mail ID</label>
@@ -65,9 +64,11 @@
         </div>
       </div>
     </div>
-    <div class="container col-md-4">
+    <div class="container col-md-6">
       <div class="box">
+        &nbsp;&nbsp;&nbsp;
         <div class="icon"><h4>WE</h4></div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div class="content">
           <p>
             <label>Work Experience</label>
@@ -82,10 +83,15 @@
       </div>
     </div>
   </div>
+</div>
+<div class="card" style="width: 90rem">
+  <h2 style="text-align: center">Fill the fields below</h2>
   <div class="row">
-    <div class="container col-md-4">
+    <div class="container col-md-6">
       <div class="box">
+        &nbsp;&nbsp;&nbsp;
         <div class="icon"><h4>Q1</h4></div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div class="content">
           <p>
             <label>How did you hear about us?</label>
@@ -99,9 +105,11 @@
         </div>
       </div>
     </div>
-    <div class="container col-md-4">
+    <div class="container col-md-6">
       <div class="box">
+        &nbsp;&nbsp;&nbsp;
         <div class="icon"><h4>Q2</h4></div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div class="content">
           <p>
             <label>What position did you interview for?</label>
@@ -115,204 +123,170 @@
         </div>
       </div>
     </div>
-    <div class="container col-md-4">
-      <div class="box">
-        <div class="icon"><h4>Q3</h4></div>
-        <div class="content">
-          <p>
-          <label>How was the interview process?</label>
-          <select matNativeControl #ip (click)="chooseIp(ip)">
-            <option label="--select something --"></option>
-            <option value="Challenging and interesting">
-              Challenging and interesting
-            </option>
-            <option value="Fast and fluid">Fast and fluid</option>
-            <option value="Rather boring">Rather boring</option>
-            <option value="Too long">Too long</option>
-          </select>
-        </p>
-        </div>
-      </div>
-    </div>
   </div>
-
   <div class="row">
-    <div class="container col-md-4">
+    <div class="container col-md-6">
       <div class="box">
-        <div class="icon"><h4>Q4</h4></div>
+        &nbsp;&nbsp;&nbsp;
+        <div class="icon"><h4>Q3</h4></div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div class="content">
           <p>
-            <label
-              >Please rate the following statement: “My phone and email
-              communication with the recruiter was prompt.”</label
+            <label>How was the interview process?</label>
+            <select
+              class="dropdown"
+              matNativeControl
+              #ip
+              (click)="chooseIp(ip)"
             >
-            <select #q4 (click)="candidate.cq4 = q4.value">
               <option label="--select something --"></option>
-              <option id="text" value="Always">Always</option>
-              <option id="text" value="Most of the time">
-                Most of the time
-              </option>
-              <option id="text" value="Sometimes">Sometimes</option>
-              <option id="text" value="Rarely">Rarely</option>
-              <option id="text" value="Never">Never</option>
+              <option value="Hard">Hard</option>
+              <option value="Medium">Medium</option>
+              <option value="Easy">Easy</option>
             </select>
           </p>
         </div>
       </div>
     </div>
-    <div class="container col-md-4">
+    <div class="container col-md-6">
       <div class="box">
-        <div class="icon"><h4>Q5</h4></div>
+        &nbsp;&nbsp;&nbsp;
+        <div class="icon"><h4>Q4</h4></div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div class="content">
           <p>
-            <label>Did you understand the role you're hiring for?</label>
-          </p>
-          <input
+            Did you understand the role you're hiring for?
+          </p>&nbsp;&nbsp;
+            <input
             type="radio"
             id="q5"
             value="Yes"
             name="recruiter"
-            [(ngModel)]="candidate.cq5"
+            [(ngModel)]="candidate.cq4"
           />
-          <label id="radio" for="q5">Yes</label>
+          <label  id="radio" for="q5">Yes</label>
           &nbsp;&nbsp;&nbsp;
           <input
             type="radio"
             id="q5"
             value="No"
             name="recruiter"
-            [(ngModel)]="candidate.cq5"
+            [(ngModel)]="candidate.cq4"
           />
           <label id="radio" for="q5">No</label>
         </div>
       </div>
     </div>
-    <div class="container col-md-4">
+  </div>
+  <div class="row">
+    <div class="container col-md-6">
       <div class="box">
+        &nbsp;&nbsp;&nbsp;
+        <div class="icon"><h4>Q5</h4></div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="content">
+          <p>
+            <label>How consistent was the job description with what was presented to you about the role during the hiring process?</label>
+            <select
+              class="dropdown"              
+              #q5 (click)="candidate.cq5 = q5.value">
+              <option label="--select something --"></option>
+              <option value="Very Consistent">Very Consistent</option>
+              <option value="Mostly Monsistent">Mostly Monsistent</option>
+              <option value="Somewhat Consistent">Somewhat Consistent</option>
+              <option value="Barely Consistent">Barely Consistent</option>
+              <option value="Not Consistent at all">Not Consistent at all</option>
+            </select>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container col-md-6">
+      <div class="box">
+        &nbsp;&nbsp;&nbsp;
         <div class="icon"><h4>Q6</h4></div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div class="content">
           <p>
-            <label
-              >How consistent was the job description?</label
-            >
-            <select #q6 (click)="candidate.cq6 = q6.value">
+            <label>How likely are you to recommend the company to others?</label>
+            <select class="dropdown" #q6 (click)="candidate.cq6 = q6.value">
               <option label="--select something --"></option>
-              <option id="text" value="Very consistent">Very consistent</option>
-              <option id="text" value="Mostly consistent">
-                Mostly consistent
-              </option>
-              <option id="text" value="Somewhat consistent">
-                Somewhat consistent
-              </option>
-              <option id="text" value="Barely consistent">
-                Barely consistent
-              </option>
-              <option id="text" value="Not consistent at all">
-                Not consistent at all
-              </option>
-            </select>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="container col-md-4">
-      <div class="box">
-        <div class="icon"><h4>Q7</h4></div>
-        <div class="content">
-          <p>
-            <label
-              >“I was well prepared for the
-              interview”
-            </label>
-          </p>
-          &nbsp;
-          <input
-            type="radio"
-            id="q7"
-            value="Agree"
-            name="prepared"
-            [(ngModel)]="candidate.cq7"
-          />
-          <label id="radio" for="q9">Agree</label>
-          &nbsp;
-          <input
-            type="radio"
-            id="q7"
-            value="Disagree"
-            name="prepared"
-            [(ngModel)]="candidate.cq7"
-          />
-          <label id="radio" for="q9">Disagree</label>
-        </div>
-      </div>
-    </div>
-    <div class="container col-md-4">
-      <div class="box">
-        <div class="icon"><h4>Q8</h4></div>
-        <div class="content">
-          <p>
-            <label>How likely you would recommend our company to others?</label>
-            <select #q8 (click)="candidate.cq8 = q8.value">
-              <option label="--select something --"></option>
-              <option id="text" value="Very likely">Very consistent</option>
+              <option id="text" value="Very Likely">Very Likely</option>
               <option id="text" value="Likely">Likely</option>
-              <option id="text" value="Somewhat likely">Somewhat likely</option>
-              <option id="text" value="Not likely">Not likely</option>
+              <option id="text" value="Somewhat Likely">Somewhat Likely</option>
+              <option id="text" value="Not Likely">Not Likely</option>
+              <option id="text" value="Not at all likely">Not at all likely</option>
             </select>
           </p>
         </div>
       </div>
     </div>
-    <div class="container col-md-4">
+  </div>
+  <div class="row">
+    <div class="container col-md-6">
       <div class="box">
-        <div class="icon"><h4>Q9</h4></div>
+        &nbsp;&nbsp;&nbsp;
+        <div class="icon"><h4>Q7</h4></div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div class="content">
           <p>
-            <label
-              >What do you think would make our hiring process better?</label
-            >
-            <input
-              type="text"
-              id="text"
-              [(ngModel)]="candidate.cq9"
-              placeholder="Type here"
-            />
+            <label>What was your impression about the company and the interview process?</label>          
+          <textarea placeholder="Enter your suggestions" [(ngModel)]="candidate.cq7"></textarea>
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="container col-md-6">
+      <div class="box">
+        &nbsp;&nbsp;&nbsp;
+        <div class="icon"><h4>Q8</h4></div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="content">
+          <p>
+            <label>What do you think would make our hiring process better?</label>
+            <textarea placeholder="Enter your suggestions" [(ngModel)]="candidate.cq8"></textarea>
           </p>
         </div>
       </div>
     </div>
   </div>
-
-  <div
-      id="message"
-      *ngIf="alert"
-      class="alert alert-success alert-dismissible fade show"
-      role="alert"
-    >
-      <strong>Success!!</strong> Your Response is added successfully.
-      <button
-        (click)="closeAlert()"
-        type="button"
-        class="close"
-        data-dismiss="alert"
-        aria-label="Close"
-      >
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    
   <div class="row">
-    <div class="container col-md-5"></div>
-    <div class="container col-md-4">
-    
-    <div>
-      <button (click)="csubmit()" class="btn btn-primary">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <button (click)="creset()" class="btn btn-danger">Cancel</button>
+    <div class="container col-md-6">
+      <div class="box">
+        &nbsp;&nbsp;&nbsp;
+        <div class="icon"><h4>Q9</h4></div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="content">
+          <p>
+            <label>Is there anything else you'd like to add about your experience with our hiring process?</label>
+            <textarea placeholder="Enter your suggestions" [(ngModel)]="candidate.cq9"></textarea>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container col-md-6">
+      <div class="box">
+        &nbsp;&nbsp;&nbsp;
+        <div class="icon"><h4>Q10</h4></div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="content">
+          <p>
+            <label>Rate your overall interview  experience with our organization [rate 1-5]</label>
+            <input type="number"  id="text" [(ngModel)]="candidate.cq10" name="quantity" min="1" max="5">
+          </p>            
+        </div>
+      </div>
     </div>
   </div>
-  </div>
-
 </div>
+<br />
+<div class="row">
+  <div class="col-md-5">
+  </div>
+  <div class="col-md-3" id="button">
+    <h3><button type="submit" (click)="csubmit()" class="btn btn-primary">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button  (click)="creset()" class="btn btn-danger">Clear</button></h3>
+  </div>
+</div>
+</div>
+
