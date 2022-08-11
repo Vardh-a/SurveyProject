@@ -1,4 +1,5 @@
 export class Employee{
+    public  sno:number=0;
     public  empid:string="";
     public  fname:string="";
     public  lname:string="";

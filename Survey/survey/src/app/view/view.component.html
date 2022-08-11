@@ -2,6 +2,7 @@
 <h1>CANDIDATE DATA</h1>
 <table>
     <thead>
+        <th>SNo</th>
         <th>First Name</th>
         <th>Last Name</th>
         <th>Mail Id</th>
@@ -19,6 +20,7 @@
     </thead> 
     <tbody>
         <tr *ngFor="let can of candidateData">
+            <td>{{can.sno}}</td>
             <td>{{can.fname}}</td>
             <td>{{can.lname}}</td>
             <td>{{can.mail}}</td>

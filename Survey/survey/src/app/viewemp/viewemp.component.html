@@ -2,6 +2,7 @@
 <h1>Employee DATA</h1>
 <table>
     <thead>
+        <th>SNo</th>
         <th>Employee ID</th>
         <th>First Name</th>
         <th>Last Name</th>
@@ -20,6 +21,7 @@
     </thead> 
     <tbody>
         <tr *ngFor="let emp of employeeData">
+            <td>{{emp.sno}}</td>
             <td>{{emp.empid}}</td>
             <td>{{emp.fname}}</td>
             <td>{{emp.lname}}</td>

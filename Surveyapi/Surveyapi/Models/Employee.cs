@@ -2,7 +2,8 @@
 {
     public class Employee
     {
-        public string empid { get; set; }
+        public int sno { get; set; }
+        public int empid { get; set; }
         public string fname { get; set; }
         public string lname { get; set; }
         public string mail { get; set; }

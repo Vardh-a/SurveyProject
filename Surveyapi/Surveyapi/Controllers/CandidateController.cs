@@ -11,24 +11,31 @@ namespace Surveyapi.Controllers
     [EnableCors("MyCors")]
     public class CandidateController : ControllerBase
     {
-        private readonly CandidateRepo _crepo;
-        public CandidateController(CandidateRepo crepo)
+       
+        private readonly IRepo<Candidate> _crepo;
+        public CandidateController(IRepo<Candidate> crepo)
         {
             _crepo = crepo;
         }
         [HttpGet]
         [Route("Get_Candidates")]
-        public async Task<IActionResult> GetCandidates()
+        public async Task<ActionResult<IEnumerable<Candidate>>> GetAll()
         {
-            var candidates = await _crepo.GetAll();
-            return Ok(candidates);
+            var prd = _crepo.GetAll().ToList();
+            if (prd.Count == 0)
+                return NotFound("No Employee present");
+            return Ok(prd);
         }
         [HttpPost]
         [Route("Add_Candidates")]
-        public async Task<IActionResult> PostEmployees(Candidate candidate)
+        public async Task<ActionResult<Candidate>> PostCandidate(Candidate candidate)
         {
             var can = await _crepo.Add(candidate);
-            return Created("Employee Created", can);
+            if (can == null)
+            {
+                return BadRequest("Something went wrong");
+            }            
+            return Created("Candidate Created", can);
         }
     }
 }

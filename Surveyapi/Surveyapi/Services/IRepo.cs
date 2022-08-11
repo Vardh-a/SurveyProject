@@ -1,8 +1,9 @@
 ﻿namespace Surveyapi.Services
 {
-    public interface IRepo<K,T>
+    public interface IRepo<T>
     {
         Task<T> Add(T item);
-        Task<ICollection<T>> GetAll();
+        IEnumerable<T> GetAll();
+        
     }
 }

@@ -9,8 +9,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<IRepo<int, Employee>, EmployeeRepo>();
-builder.Services.AddScoped<CandidateRepo>();
+builder.Services.AddScoped<IRepo< Employee>, EmployeeRepo>();
+builder.Services.AddScoped<IRepo<Candidate>,CandidateRepo>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("MyCors", opts =>

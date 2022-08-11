@@ -1,4 +1,5 @@
 export class Candidate{
+    public  sno:number=0;
     public  fname:string="";
     public  lname:string="";
     public  mail:string="";

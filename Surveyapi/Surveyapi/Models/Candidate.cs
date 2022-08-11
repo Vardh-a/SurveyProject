@@ -2,6 +2,7 @@
 {
     public class Candidate
     {
+        public int sno { get; set; }
         public string fname { get; set; }
         public string lname { get; set; }
         public string mail { get; set; }
